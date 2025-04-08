@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en el Poli - Plataforma de Gestión de Eventos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Header - Cabecera con navegación y logotipo -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Eventos en el Poli Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="registro.html" class="btn btn-secondary">Registrarse</a>
+            <a href="login.html" class="btn btn-primary">Iniciar sesión</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section - Sección principal con imagen de fondo y texto destacado -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Gestión de eventos</h1>
+        <p>Nuestra plataforma de gestión de eventos simplifica la organización, mejora la experiencia de los asistentes y te ayuda a alcanzar tus objetivos con eficiencia.</p>
+        <div class="hero-buttons">
+            <a href="crear-evento.html" class="btn btn-primary">Crear evento</a>
+            <a href="eventos.html" class="btn btn-secondary">Ver eventos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section - Servicios destacados con iconos -->
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Gestión de Eventos</h3>
+                <p>Plataforma integral para crear, organizar y gestionar eventos de diferentes tipos y escalas.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <h3>Venta de Entradas</h3>
+                <p>Sistema de venta y gestión de entradas con múltiples opciones de pago y control de acceso.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Gestión de Asistentes</h3>
+                <p>Seguimiento de asistentes, registro, envío de recordatorios y comunicación personalizada.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Análisis y Estadísticas</h3>
+                <p>Informes detallados y análisis de datos para medir el éxito de tus eventos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events Categories - Categorías de eventos -->
+<section class="event-categories">
+    <div class="container">
+        <h2 class="section-title">No te pierdas los próximos eventos...</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Conciertos">
+                </div>
+                <div class="category-content">
+                    <h3>Conciertos</h3>
+                    <p>Disfruta de los mejores artistas nacionales e internacionales</p>
+                    <p><strong>Próximo:</strong> Viernes 15 de Abril</p>
+                    <p><strong>Lugar:</strong> Auditorio principal</p>
+                    <span class="category-tag">Evento gratis</span>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fiestas">
+                </div>
+                <div class="category-content">
+                    <h3>Fiestas</h3>
+                    <p>Celebraciones y fiestas temáticas para todos los gustos</p>
+                    <p><strong>Próximo:</strong> Sábado 16 de Abril</p>
+                    <p><strong>Lugar:</strong> Salón 305</p>
+                    <span class="category-tag">Requiere pre-registro</span>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Conferencias">
+                </div>
+                <div class="category-content">
+                    <h3>Conferencias</h3>
+                    <p>Charlas dirigidas por expertos sobre temas de interés</p>
+                    <p><strong>Próximo:</strong> Jueves 14 de Abril</p>
+                    <p><strong>Lugar:</strong> Auditorio principal</p>
+                    <span class="category-tag">Evento gratis</span>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="https://images.pexels.com/photos/7647913/pexels-photo-7647913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Networking">
+                </div>
+                <div class="category-content">
+                    <h3>Networking</h3>
+                    <p>Espacios para conectar con profesionales y ampliar tu red de contactos</p>
+                    <p><strong>Varias fechas</strong></p>
+                    <p><strong>Formato:</strong> Virtual + Presencial</p>
+                    <span class="category-tag">Eventos gratis</span>
+                </div>
+            </div>
+        </div>
+        <div class="center-button">
+            <a href="eventos.html" class="btn btn-cta">Ver todos los eventos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section - Características destacadas -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">¿Por qué elegir nuestra plataforma?</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Experiencia Mobile</h3>
+                <p>Aplicación móvil para gestionar eventos desde cualquier lugar y en cualquier momento.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <h3>Control de Acceso</h3>
+                <p>Sistema de códigos QR para validación de entradas y control de asistencia en tiempo real.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Promoción Integral</h3>
+                <p>Herramientas de marketing y promoción para dar visibilidad a tus eventos.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Soporte Técnico</h3>
+                <p>Asistencia técnica disponible 24/7 para organizadores y asistentes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section - Testimonios de clientes -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"La plataforma ha revolucionado la manera en que organizamos eventos universitarios. La interface es intuitiva y el soporte es excepcional."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Carolina Ramírez">
+                    <div class="author-info">
+                        <h4>Carolina Ramírez</h4>
+                        <p>Coordinadora de Eventos, Universidad Nacional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Desde que implementamos esta plataforma, hemos aumentado la asistencia a nuestros eventos en un 40% y mejorado la experiencia de nuestros asistentes significativamente."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Andrés Martínez">
+                    <div class="author-info">
+                        <h4>Andrés Martínez</h4>
+                        <p>Director de Bienestar Universitario, Politécnico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section - Llamado a la acción -->
+<section class="cta">
+    <div class="container">
+        <h2>¿Listo para organizar tu próximo evento?</h2>
+        <p>Únete a cientos de organizadores que confían en nosotros</p>
+        <a href="registro.html" class="btn btn-cta">Crear cuenta ahora</a>
+    </div>
+</section>
+
+<!-- Footer - Pie de página con información de contacto y enlaces -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Eventos en el Poli Logo" class="footer-img">
+                <h3>Eventos en el Poli</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Carrera 7 #40B-53, Bogotá, Colombia</p>
+                <p><i class="fas fa-phone"></i> (+57) 601 323 9300</p>
+                <p><i class="fas fa-envelope"></i> info@eventoselpoli.co</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Eventos en el Poli. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario - Eventos en el Poli</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="admin-body">
+<!-- Viewer Header - Cabecera del panel de visualizador -->
+<header class="admin-header">
+    <div class="container">
+        <div class="logo">
+            <a href="viewer-dashboard.html">
+                <img src="img/logo.png" alt="Eventos en el Poli Logo">
+                <span>Mi Panel</span>
+            </a>
+        </div>
+        <nav class="admin-nav">
+            <ul>
+                <li><a href="viewer-dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="viewer-eventos.html">Mis Eventos</a></li>
+                <li><a href="eventos.html">Explorar Eventos</a></li>
+                <li><a href="viewer-perfil.html">Mi Perfil</a></li>
+            </ul>
+        </nav>
+        <div class="admin-profile">
+            <span>Usuario</span>
+            <div class="admin-avatar">
+                <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Usuario Avatar">
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Viewer Content - Contenido principal del panel -->
+<div class="admin-container">
+    <!-- Sidebar - Barra lateral con menú de navegación -->
+    <aside class="admin-sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active">
+                    <a href="viewer-dashboard.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewer-eventos.html">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Mis Eventos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewer-entradas.html">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Mis Entradas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewer-favoritos.html">
+                        <i class="fas fa-heart"></i>
+                        <span>Favoritos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewer-historial.html">
+                        <i class="fas fa-history"></i>
+                        <span>Historial</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewer-perfil.html">
+                        <i class="fas fa-user"></i>
+                        <span>Mi Perfil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewer-notificaciones.html">
+                        <i class="fas fa-bell"></i>
+                        <span>Notificaciones</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content - Contenido principal del dashboard -->
+    <main class="admin-main">
+        <div class="page-header">
+            <h1>Mi Dashboard</h1>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar eventos...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Welcome Banner - Banner de bienvenida -->
+        <div class="content-card welcome-banner">
+            <div class="welcome-content">
+                <h2>Bienvenido de nuevo, <span class="user-name">Usuario</span></h2>
+                <p>Tienes 3 eventos próximos y 2 entradas sin usar. ¡No te pierdas ninguna oportunidad!</p>
+                <a href="eventos.html" class="btn btn-primary">Explorar Eventos</a>
+            </div>
+            <div class="welcome-image">
+                <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Evento destacado">
+            </div>
+        </div>
+
+        <!-- Stats Cards - Tarjetas con estadísticas personales -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-card-icon blue">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Eventos Asistidos</h3>
+                    <p class="stat-number">12</p>
+                    <p class="stat-growth positive">+3 este mes</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon green">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Entradas Activas</h3>
+                    <p class="stat-number">2</p>
+                    <p class="stat-label">Próximos eventos</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon purple">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Eventos Favoritos</h3>
+                    <p class="stat-number">7</p>
+                    <p class="stat-growth positive">+2 nuevos</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon orange">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="stat-card-content">
+                    <h3>Notificaciones</h3>
+                    <p class="stat-number">5</p>
+                    <p class="stat-label">Sin leer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events - Próximos eventos del usuario -->
+        <div class="content-card">
+            <div class="card-header">
+                <h2>Mis Próximos Eventos</h2>
+                <a href="viewer-eventos.html" class="view-all">Ver todos</a>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Fecha</th>
+                        <th>Ubicación</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="event-name">
+                            <div class="event-img">
+                                <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Concierto Rock">
+                            </div>
+                            <div>Concierto Rock en Vivo</div>
+                        </td>
+                        <td>15 Abr, 2025</td>
+                        <td>Auditorio Principal</td>
+                        <td><span class="badge badge-success">Confirmado</span></td>
+                        <td class="actions">
+                            <button class="btn-icon btn-view"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon btn-delete"><i class="fas fa-times"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="event-name">
+                            <div class="event-img">
+                                <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fiesta Universitaria">
+                            </div>
+                            <div>Fiesta Universitaria</div>
+                        </td>
+                        <td>16 Abr, 2025</td>
+                        <td>Salón 305</td>
+                        <td><span class="badge badge-success">Confirmado</span></td>
+                        <td class="actions">
+                            <button class="btn-icon btn-view"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon btn-delete"><i class="fas fa-times"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="event-name">
+                            <div class="event-img">
+                                <img src="https://images.pexels.com/photos/7647913/pexels-photo-7647913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Networking">
+                            </div>
+                            <div>Networking Profesional</div>
+                        </td>
+                        <td>20 Abr, 2025</td>
+                        <td>Virtual + Presencial</td>
+                        <td><span class="badge badge-warning">Pendiente</span></td>
+                        <td class="actions">
+                            <button class="btn-icon btn-view"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon btn-delete"><i class="fas fa-times"></i></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Events recommendations - Recomendaciones de eventos -->
+        <div class="content-card">
+            <div class="card-header">
+                <h2>Recomendaciones para ti</h2>
+                <a href="eventos.html" class="view-all">Ver más</a>
+            </div>
+            <div class="event-recommendations">
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <img src="https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Festival de Música">
+                        <span class="event-date">22 Abr</span>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>Festival de Música</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Arena Principal</p>
+                        <p class="event-description">Gran festival con los mejores artistas nacionales e internacionales.</p>
+                        <div class="event-card-actions">
+                            <span class="event-price">$75.000</span>
+                            <button class="btn btn-sm btn-primary">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Conferencia Tech">
+                        <span class="event-date">28 Abr</span>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>Conferencia de Tecnología</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Centro de Convenciones</p>
+                        <p class="event-description">Aprende sobre las últimas tendencias en tecnología e innovación.</p>
+                        <div class="event-card-actions">
+                            <span class="event-price">Gratis</span>
+                            <button class="btn btn-sm btn-primary">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card-img">
+                        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Concierto Acústico">
+                        <span class="event-date">5 May</span>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>Concierto Acústico</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Teatro Municipal</p>
+                        <p class="event-description">Experiencia musical íntima con artistas locales.</p>
+                        <div class="event-card-actions">
+                            <span class="event-price">$45.000</span>
+                            <button class="btn btn-sm btn-primary">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activities - Actividades recientes -->
+        <div class="content-card">
+            <h2>Actividades Recientes</h2>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon blue">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Entrada comprada</h4>
+                        <p>Has comprado una entrada para "Concierto Rock en Vivo".</p>
+                        <span class="activity-time">Ayer</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon green">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Evento confirmado</h4>
+                        <p>Tu asistencia a "Fiesta Universitaria" ha sido confirmada.</p>
+                        <span class="activity-time">Hace 2 días</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon purple">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Evento añadido a favoritos</h4>
+                        <p>Has añadido "Festival de Música" a tus favoritos.</p>
+                        <span class="activity-time">Hace 3 días</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon orange">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Perfil actualizado</h4>
+                        <p>Has actualizado tu información de perfil.</p>
+                        <span class="activity-time">Hace 1 semana</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+</body>
+</html>

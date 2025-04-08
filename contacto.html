@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Eventos en el Poli</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Header - Cabecera con navegación y logotipo -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Eventos en el Poli Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="registro.html" class="btn btn-secondary">Registrarse</a>
+            <a href="login.html" class="btn btn-primary">Iniciar sesión</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Contact Header - Cabecera de la página de contacto -->
+<section class="page-header">
+    <div class="container">
+        <h1>Contáctenos</h1>
+        <p>Estamos a su disposición para resolver cualquier consulta o duda que pueda tener.</p>
+    </div>
+</section>
+
+<!-- Contact Section - Sección principal de contacto -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- Contact Information - Información de contacto -->
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <p>Complete el formulario y nos pondremos en contacto con usted lo antes posible.</p>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Dirección</h3>
+                        <p>Carrera 7 #40B-53, Bogotá, Colombia</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Teléfono</h3>
+                        <p>(+57) 601 323 9300</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>info@eventoselpoli.co</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                        <p>Sábados: 9:00 AM - 12:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form - Formulario de contacto -->
+            <div class="contact-form-container">
+                <h2>Envíenos un Mensaje</h2>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Su nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Su email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Su teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" placeholder="Escriba su mensaje aquí..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section - Sección del mapa -->
+<section class="map-section">
+    <div class="map-container">
+        <!-- Aquí iría el iframe o plugin de mapa real -->
+        <div class="map-placeholder" style="background-image: url('https://images.pexels.com/photos/355931/pexels-photo-355931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <div class="map-overlay">
+                <h3>Nuestra Ubicación</h3>
+                <p>Carrera 7 #40B-53, Bogotá, Colombia</p>
+                <button class="btn btn-primary">Ver Mapa Completo</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer - Pie de página con información de contacto y enlaces -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Eventos en el Poli Logo" class="footer-img">
+                <h3>Eventos en el Poli</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Carrera 7 #40B-53, Bogotá, Colombia</p>
+                <p><i class="fas fa-phone"></i> (+57) 601 323 9300</p>
+                <p><i class="fas fa-envelope"></i> info@eventoselpoli.co</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Eventos en el Poli. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
